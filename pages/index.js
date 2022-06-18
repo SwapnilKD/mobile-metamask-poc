@@ -17,14 +17,15 @@ export default function Home() {
       // Access the decentralized web!
     } else {
       message.error('Metamask not present, check if we can launch metamask or not');
-      showCustomNotification(
-        'warning',
-        'Metamask needed now',
-        'Okokok'
-      );
+      // showCustomNotification(
+      //   'warning',
+      //   'Metamask needed now',
+      //   'Okokok'
+      // );
       console.log('Please install MetaMask!');
     }
-    window.open("https://metamask.app.link/dapp/95a0-2402-3a80-18cb-d6a6-99e7-c153-63e4-ca32.in.ngrok.io")
+    // we need use deeplink url here to open metamask mobile app
+    window.open("https://metamask.app.link/dapp/5ea7-42-107-68-31.in.ngrok.io")
   }
 
   // it uses provider works on desktop does not work on mobile
@@ -52,7 +53,7 @@ export default function Home() {
       </Head>
 
      <div style={{ marginTop: 40, margnleft: 40 }}>
-       <button onClick={openMetamask}>Open Metamask</button>
+       <button onClick={openLikeOpenSea}>Open Metamask</button>
      </div>
 
       {/* <footer className={styles.footer}>
